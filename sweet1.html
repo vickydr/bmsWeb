@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<!--
+	Radius by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Sweets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
+  </style>
+  
+	</head>
+	<body>
+
+		<!-- Header -->
+		<!-- Main -->
+			
+			<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BALAJI BAKERY</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">SWEET</a></li>
+      <li><a href="cake.html">CAKES</a></li>
+      <li><a href="login.html">LOGOUT</a></li>
+      
+     
+    </ul>
+  </div>
+</nav>
+			
+				<div class="inner">
+					<div class="columns">
+			 <div class="modal fade" id="myModal" role="menu">
+                                   <div class="modal-dialog" >
+    
+      <!-- Modal content-->
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                 <h4 class="modal-title">Quantity(kgs)</h4>
+                                                 
+                                           </div>
+                                    <div class="modal-body">
+                                    <label for="Quantity">Quantity needed:</label>
+                                                  <input type="number" class="form-control" id="Quantity" placeholder="Enter the amount needed" name="Quantity">
+                                                  <br>
+                                                  <br>
+                                                  <input type="number" class="form-control" id="Quantity" placeholder="Total Amount (Rs)" name="Total Amount">
+                                  </div>
+                               <div class="modal-footer">
+                              <button type="submit" class="btn btn-default" data-dismiss="modal">Confirm Order</button>  
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             </div>
+                                </div>
+      
+                           </div>
+                          </div>  
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/Cham_Cham.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Cham Cham</h2>
+                                <h2>1kg = 250 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+  
+
+                             </div>
+                           </div>
+                           </div>
+                               
+                           </div>
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/ChocoVanillaPateesa.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Choco Vanilla Pateesa</h2>
+                                <h2>1kg = 200 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                              </div>
+                           </div>
+                           </div>
+                           </div>
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/download1.jfif" alt="">
+                                <div class="overlay">
+                                <h2>Tamil Jileypi</h2>
+                                <h2>1kg = 150 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/gulab_jamun.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Gulab Jamun</h2>
+                                <h2>1kg = 135 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+
+						<!-- Column 2 (vertical, horizontal, vertical, horizontal) -->
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/HabshiHalwaCubes.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Habshi Halwa Cubes</h2>
+                                <h2>1kg = 145 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/images8.jfif" alt="">
+                                <div class="overlay">
+                                <h2>MysorePakk</h2>
+                                <h2>1kg = 100 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/IndiahotJalebi.jpg" alt="">
+                                <div class="overlay">
+                                <h2>India hot Jalebi</h2>
+                                <h2>1kg = 90 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+                           		<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/IndianRasmalai.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Indian Rasmalai</h2>
+                                <h2>1kg = 190 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+						<!-- Column 3 (horizontal, vertical, horizontal, vertical) -->
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/KajuKatli.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Kaju Katli</h2>
+                                <h2>1kg = 80 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/Laddu.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Laddu</h2>
+                                <h2>1kg = 120 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/MixHalva.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Mix Halva</h2>
+                                <h2>1kg = 220 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+
+                           	<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/MixMithai.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Mix Mithai</h2>
+                                <h2>1kg = 220 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+						<!-- Column 4 (vertical, horizontal, vertical, horizontal) -->
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/SweetMalaiChumChum.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Sweet Malai Chum Chum</h2>
+                                <h2>1kg = 250 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/SoanPapdi.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Soan Papdi</h2>
+                                <h2>1kg = 70 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/MixMithai.jpg" alt="">
+                                <div class="overlay">
+                                <h2>Mix Mithai</h2>
+                                <h2>1kg = 70 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+							
+							<div col-lg-3 col-md-4 col-sm-6 col-xs-12>
+							<div class ="image fit">
+                              <div class="hovereffect">
+                                <img class="img-responsive" src="images/images7.jfif" alt="">
+                                <div class="overlay">
+                                <h2>Badam Gir</h2>
+                                <h2>1kg = 80 RS</h2>
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Order now</button>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<a href="#" class="info fa fa-info-circle"><span>About</span></a>
+				<div class="inner">
+					<div class="content">
+						<h3></h3>
+						<p></p>
+					</div>
+					<div class="copyright">
+						<h3>Follow me</h3>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						</ul>
+						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

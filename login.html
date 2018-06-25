@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   body, html {
+    height: 100%;
+    margin: 0;
+}
+form
+{
+    align:"center";
+}
+.foo
+{
+    padding-right: 20px;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("images/cake1.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BALAJI BAKERY</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">LOGIN</a></li>
+      <li><a href="sweet.html">SWEET</a></li>
+      <li><a href="cake.html">CAKE</a></li>
+      <li><a href="signup.html">SIGNUP</a></li>
+     
+    </ul>
+  </div>
+</nav>  
+<div class="container-fluid bg">
+  <h2>Login</h2>
+  <form action="log">
+    <div class="form-group" style="padding-left:350px;width:700px">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group" style="padding-left:350px;width:700px">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="checkbox" style="padding-left:350px;">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+      <span><a href="#"><b>    Forgot?</b> </a></span>
+    </div>
+    <div style="padding-left:350px;">
+       <a href="signup.html"><b> Create a new Account</b></a>
+       </div>
+       <div style="padding-left:450px;">
+    <input type="submit"   value="Login" class="btn btn-default">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

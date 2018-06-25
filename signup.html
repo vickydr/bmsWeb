@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>Signup</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("images/images21.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+form
+{
+    align:"center";
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+<script type="text/javascript">
+function myFunction() {
+    var fn, text;
+
+    // Get the value of the input field with id="numb"
+    fn = document.getElementById("firstname").value;
+	ln = document.getElementById("lastname").value;
+	p = document.getElementById("psw").value;
+	ph= document.getElementById("mobile").value;
+	 console.log("hai")
+    // If x is Not a Number or less than one or greater than 10
+    if ( fn.length >5  && fn.length < 20) {
+    } 
+    else
+    	{
+    	text="invalid firstname";
+    	}
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BALAJI BAKERY</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">SIGNUP</a></li>
+      <li><a href="sweet.html">SWEET</a></li>
+      <li><a href="cake.html">CAKE</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+     
+    </ul>
+  </div>
+</nav>  
+<form action="addcustomer" style="border:1px solid #ccc">
+  <div class="container bg">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+	<div style="padding-left:350px;width:700px">
+    <label for="email"><b>Email</b></label>
+    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+	<label for="firstName"><b>First Name</b></label>
+    <input type="text" id="firstname" placeholder="Enter firstname" name="firstname" required>
+    
+    <label for="LastName"><b>Last Name</b></label>
+    <input type="text" id="lastname" placeholder="Enter lastname" name="lastname" required>
+    
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+    
+     <label for="PhoneNumber"><b>Phone NO</b></label>
+    <input type="text" id="mobile" placeholder="Enter Phone Number" name="mobile" required>
+    
+     
+        
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" onclick="return myFunction()">Sign Up</button>
+    </div>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
